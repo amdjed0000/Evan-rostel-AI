@@ -1,0 +1,25 @@
+:root {
+    --color-bg-top: #2b0505;
+    /* Deep Oxidized Blood Red */
+    --color-bg-bottom: #011408;
+    /* Profound Blackened Emerald Green */
+    --vignette-black: #000000;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.background-layer {
+    background: linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bottom) 100%);
+}
+
+.vignette-layer {
+    background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.95) 120%);
+    opacity: 0.9;
+}
+
+.profile-glow {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
